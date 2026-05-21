@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors — Industrial Precision palette */
+  --color-surface: #131313;
+  --color-surface-dim: #131313;
+  --color-surface-bright: #3a3939;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #d0c6ab;
+  --color-inverse-surface: #e5e2e1;
+  --color-inverse-on-surface: #313030;
+  --color-outline: #999077;
+  --color-outline-variant: #4d4732;
+  --color-surface-tint: #e9c400;
+  --color-surface-variant: #353534;
+
+  --color-primary: #fff6df;
+  --color-on-primary: #3a3000;
+  --color-primary-container: #ffd700;
+  --color-on-primary-container: #705e00;
+  --color-inverse-primary: #705d00;
+  --color-primary-fixed: #ffe16d;
+  --color-primary-fixed-dim: #e9c400;
+  --color-on-primary-fixed: #221b00;
+  --color-on-primary-fixed-variant: #544600;
+
+  --color-secondary: #c8c6c5;
+  --color-on-secondary: #313030;
+  --color-secondary-container: #474746;
+  --color-on-secondary-container: #b7b5b4;
+  --color-secondary-fixed: #e5e2e1;
+  --color-secondary-fixed-dim: #c8c6c5;
+  --color-on-secondary-fixed: #1c1b1b;
+  --color-on-secondary-fixed-variant: #474746;
+
+  --color-tertiary: #f8f6f5;
+  --color-on-tertiary: #303030;
+  --color-tertiary-container: #dcd9d9;
+  --color-on-tertiary-container: #5f5f5f;
+  --color-tertiary-fixed: #e4e2e1;
+  --color-tertiary-fixed-dim: #c8c6c6;
+  --color-on-tertiary-fixed: #1b1c1c;
+  --color-on-tertiary-fixed-variant: #474747;
+
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --color-background: #131313;
+  --color-on-background: #e5e2e1;
+
+  /* Typography */
+  --font-display-lg: "Montserrat", sans-serif;
+  --font-headline-xl: "Montserrat", sans-serif;
+  --font-headline-lg: "Montserrat", sans-serif;
+  --font-headline-lg-mobile: "Montserrat", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-label-bold: "Inter", sans-serif;
+  --font-stat-number: "Montserrat", sans-serif;
+
+  --text-display-lg: 64px 72px 700;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-headline-xl: 40px 48px 700;
+  --text-headline-xl--letter-spacing: -0.01em;
+  --text-headline-lg: 32px 40px 600;
+  --text-headline-lg-mobile: 24px 32px 700;
+  --text-body-lg: 18px 28px 400;
+  --text-body-md: 16px 24px 400;
+  --text-label-bold: 14px 20px 600;
+  --text-label-bold--letter-spacing: 0.05em;
+  --text-stat-number: 48px 48px 700;
+
+  /* Border radius */
+  --radius-sm: 0.125rem;
+  --radius-DEFAULT: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Custom spacing */
+  --spacing-unit: 8px;
+  --spacing-container-max: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(71, 71, 70, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(153, 144, 119, 0.3);
+}
+
+.hero-overlay {
+  background: linear-gradient(to right, rgba(19, 19, 19, 0.95) 0%, rgba(19, 19, 19, 0.4) 100%);
+}
+
+.card-gradient {
+  background: linear-gradient(to top, rgba(19, 19, 19, 0.9) 0%, rgba(19, 19, 19, 0) 100%);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
